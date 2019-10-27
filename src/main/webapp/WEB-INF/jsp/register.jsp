@@ -20,6 +20,7 @@
 		<hr>
 	</div>
 	<div class="content">
+	<form id="register_form">
 		<div class="form-item">
 			<div class="form-item form-item-account" id="form-item-account"  style="border-right: 1px solid rgb(221, 221, 221); border-top-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221);">
                  <label>用　户　名</label>
@@ -73,6 +74,7 @@
 		<div>
 			<button class="btn-register" id="form-register" >立即注册</button>
 		</div>
+		</form>
 	</div>
 	<hr>
 	<div id="foot">

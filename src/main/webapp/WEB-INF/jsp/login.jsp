@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="tools/css/layui.css" media="all">
 <link rel="stylesheet" href="tools/css/main.css">
 <script type="text/javascript" src="tools/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="tools/js/main.js"></script>
 </head>
 <body>
 	<div class="w">
