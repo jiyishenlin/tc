@@ -51,7 +51,7 @@
 					</div>
 				</div>
 				<div class="login-tip">
-					<span class="warn-tip-2">验证完成后，你可以使用该邮箱登录</span>
+					<span class="warn-tip" style="display:none;"></span>
 				</div>
 				<button type="button" class="login_btn"
 					style="margin: 0px; margin-top: 25px;">立即提交</button>

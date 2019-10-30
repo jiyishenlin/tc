@@ -15,4 +15,8 @@ public class PageControl {
 	public String register() {
 		return "/WEB-INF/jsp/register.jsp";
 	}
+	@RequestMapping("/portal")
+	public String portal() {
+		return "/WEB-INF/jsp/portal.jsp";
+	}
 }

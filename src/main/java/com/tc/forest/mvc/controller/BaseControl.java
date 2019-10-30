@@ -22,4 +22,12 @@ public class BaseControl {
 		}
 		return flag;
 	}
+	
+	@ResponseBody
+	@RequestMapping("/user/register")
+	public String register(T00_User user) {
+		System.out.println(user);
+		return "success";
+	}
+	
 }

@@ -8,8 +8,9 @@
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="tools/css/layui.css"  media="all">
 <link rel="stylesheet" href="tools/css/main.css" >
+<script type="text/javascript" src="tools/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="tools/js/main.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -20,11 +21,10 @@
 		<hr>
 	</div>
 	<div class="content">
-	<form id="register_form">
 		<div class="form-item">
 			<div class="form-item form-item-account" id="form-item-account"  style="border-right: 1px solid rgb(221, 221, 221); border-top-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221);">
                  <label>用　户　名</label>
-                 <input type="text" id="form-account" name="regName" class="field" autocomplete="off" maxlength="20" placeholder="您的账户名和登录名" >
+                 <input type="text" id="form-account" name="username" class="field" autocomplete="off" maxlength="20" placeholder="您的账户名和登录名" >
         	</div>
 		</div>
 		<div class="input-tip">
@@ -34,7 +34,7 @@
 		<div class="form-item">
 			<div class="form-item form-item-account" id="form-item-account"  style="border-right: 1px solid rgb(221, 221, 221); border-top-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221);">
                  <label>设 置 密 码</label>
-                 <input type="text" id="form-account" name="regName" class="field" autocomplete="off" maxlength="20" placeholder="建议使用两种或两种以上字符组合" >
+                 <input type="text" id="form-account" name="password" class="field" autocomplete="off" maxlength="20" placeholder="建议使用两种或两种以上字符组合" >
         	</div>
 		</div>
 		<div class="input-tip">
@@ -43,7 +43,7 @@
 		<div class="form-item">
 			<div class="form-item form-item-account" id="form-item-account"  style="border-right: 1px solid rgb(221, 221, 221); border-top-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221);">
                  <label>确 认 密 码</label>
-                 <input type="text" id="form-account" name="regName" class="field" autocomplete="off" maxlength="20" placeholder="请再次输入密码" >
+                 <input type="text" id="form-account" name="repwd" class="field" autocomplete="off" maxlength="20" placeholder="请再次输入密码" >
         	</div>
 		</div>
 		<div class="input-tip">
@@ -53,7 +53,7 @@
 		<div class="form-item">
 			<div class="form-item form-item-account" id="form-item-account"  style="border-right: 1px solid rgb(221, 221, 221); border-top-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221);">
                  <label>邮 箱 验 证</label>
-                 <input type="text" id="form-account" name="regName" class="field" autocomplete="off" maxlength="20" placeholder="请输入邮箱" >
+                 <input type="text" id="form-account" name="email" class="field" autocomplete="off" maxlength="20" placeholder="请输入邮箱" >
         	</div>
 		</div>
 		<div class="input-tip">
@@ -74,7 +74,6 @@
 		<div>
 			<button class="btn-register" id="form-register" >立即注册</button>
 		</div>
-		</form>
 	</div>
 	<hr>
 	<div id="foot">
@@ -90,6 +89,14 @@
 		<div class="copy">
 			Copyright&nbsp;©&nbsp;2004-2019&nbsp;&nbsp;京东JD.com&nbsp;版权所有
 		</div>
+		</div>
+	</div>
+	<!-- 注册成功的弹出框 -->
+	<div class="back_lay"></div>
+	<div class="register_succ">
+		<p>注册成功，5秒后将返回到登陆页面！</p>
+		<div class="btn_div">
+			<button class="btn_re">立即返回</button>
 		</div>
 	</div>
 </body>
