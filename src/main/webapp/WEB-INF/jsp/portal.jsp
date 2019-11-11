@@ -11,8 +11,18 @@
 <link rel="stylesheet" href="tools/css/main.css" >
 </head>
 <body>
-<div class="p_header">
-
+<jsp:include page="header.jsp"></jsp:include>
+<div id="p_search">
+	<div class="center">
+		<div class="p_logo">
+			<a href=""><img alt="农家网" src="//img10.360buyimg.com/img/jfs/t1/83007/20/13309/249190/5da824bbEdef08493/5cec46741445645a.gif"></a>
+		</div>
+		<div class="search_content">
+			<div>
+				
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>

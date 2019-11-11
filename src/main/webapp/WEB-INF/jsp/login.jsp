@@ -39,7 +39,7 @@
 				<div class="layui-form-item">
 					<div class="layui-input-block"
 						style="margin: 0px; margin-top: 25px;">
-						<input type="text" name="username" lay-verify="title"
+						<input type="text" name="username"
 							autocomplete="off" placeholder="邮箱/用户名/手机号" class="layui-input">
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 				<div class="login-tip">
-					<span class="warn-tip" style="display:none;"></span>
+					<span class="warn-tip" style="display:none;color:#f91"></span>
 				</div>
 				<button type="button" class="login_btn"
 					style="margin: 0px; margin-top: 25px;">立即提交</button>

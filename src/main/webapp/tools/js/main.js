@@ -8,6 +8,12 @@ $(function(){
 			$(".warn-tip").css("display","none");
 		}
 	});
+	$("input[name='password']").focus(function(){
+		var block = $(".warn-tip").css("display");
+		if(block == 'block'){
+			$(".warn-tip").css("display","none");
+		}
+	});
 	$(".login_btn").click(function(){
 		var uname = $("input[name='username']").val();
 		var pwd = $("input[name='password']").val();
@@ -58,4 +64,11 @@ $(function(){
 	$(".btn_re").click(function(){
 		window.location.href="/";
 	});
+});
+/**
+ * 门户主页
+ * @returns
+ */
+$(function(){
+	
 });

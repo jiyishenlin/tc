@@ -7,16 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PageControl {
 
 	
-	@RequestMapping("/")
+	@RequestMapping({"/","/portal"})
 	public String login() {
-		return "/WEB-INF/jsp/login.jsp";
+		return "/WEB-INF/jsp/portal.jsp";
 	}
-	@RequestMapping("/register")
+	@RequestMapping("/register.html")
 	public String register() {
 		return "/WEB-INF/jsp/register.jsp";
 	}
-	@RequestMapping("/portal")
+	@RequestMapping("/login.html")
 	public String portal() {
-		return "/WEB-INF/jsp/portal.jsp";
+		return "/WEB-INF/jsp/login.jsp";
 	}
 }
